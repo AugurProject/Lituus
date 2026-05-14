@@ -1,21 +1,24 @@
 *.bak
-# Node modules
-/node_modules
+# dependencies
+node_modules
 
-# Compilation output
-/dist
+# yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
 
-# pnpm deploy output
-/bundle
+# eslint
+.eslintcache
 
-# Hardhat Build Artifacts
-/artifacts
+# misc
+.DS_Store
 
-# Hardhat compilation (v2) support directory
-/cache
+# IDE
+.vscode
+.idea
 
-# Typechain output
-/types
-
-# Hardhat coverage reports
-/coverage
+# cli
+dist
